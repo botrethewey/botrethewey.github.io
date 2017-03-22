@@ -335,8 +335,8 @@ main a {
   line-height:  1.5;
 }
 
-#space footer {
-  margin: 8% 10% 0% 9%;
+#space div.src {
+  padding-top: 50px;
 }
 /*end about*/
 /*end main*/
