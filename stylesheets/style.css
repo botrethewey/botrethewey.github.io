@@ -333,7 +333,10 @@ main a {
   font-size: .8rem;
   margin-right: 5%;
   line-height:  1.5;
-  padding-bottom: 2%;
+}
+
+#space footer {
+  margin: 4% 10% 0% 9%;
 }
 /*end about*/
 /*end main*/
