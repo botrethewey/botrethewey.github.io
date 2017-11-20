@@ -1,79 +1,85 @@
-<!DOCTYPE html>
-<html id="swim">
+<!doctype html>
+<html class="no-js" lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bo Trethewey</title>
+  <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+  <link rel="stylesheet" href="stylesheets/css/foundation.css">
+  <link rel="stylesheet" href="stylesheets/css/app.css">
   <link rel="stylesheet" href="stylesheets/style.css">
 </head>
+
 <body>
   <header>
-    <div class="banner" >
+    <div class="banner">
       <h1>Bo Trethewey</h1>
       <p>Full Stack Developer</p>
       <p>Graphic designer</p>
     </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="hobby-blog.html">Extracurricular</a>
-          <ul>
-            <li><a href="hobby-blog/entry-one.html">entry one</a></li>
-            <li><a href="hobby-blog/entry-two.html">entry two</a></li>
-          </ul>
-        </li>
+
+    <nav>
+      <ul class="menu align-center">
         <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="hobby-blog.html">Extracurricular</a></li>
       </ul>
     </nav>
   </header>
+
   <main id="portfolio">
-    <div class="subjects">
-      <a href="#ruby">
-        <article class="subject">
-          <h2>Ruby</h2>
-        </article>
-      </a>
-      <a href="#htmlcss">
-        <article class="subject">
-          <h2>HTML/CSS</h2>
-        </article>
-      </a>
-      <a href="#graphic">
-        <article class="subject">
-          <h2>Graphic Design</h2>
-        </article>
-      </a>
+      <div class="row">
+        <div class="small-12 large-centered columns">
+                <h3 class="subject">Ruby</h3>
+        </div>
+
+        <div class="small-12 medium-5 columns">
+          <a href="https://gist.github.com/botrethewey/845b40bc69f390432be7d7afe0e3b0bd"><img src="images/mybabydragon.png" alt="BabyDragon"></a>
+        </div>
+        <div class="small-12 medium-7 columns">
+          <a href="https://github.com/botrethewey/ride-share-two"><img src="images/tdd.png" alt="TDD"></a>
+        </div>
       </div>
-      <div id="ruby">
-        <h3>Ruby</h3>
-        <a href="https://gist.github.com/botrethewey/845b40bc69f390432be7d7afe0e3b0bd"><img src="images/mybabydragon.png" alt="BabyDragon"></a>
-        <a href="https://github.com/botrethewey/ride-share-two"><img src="images/tdd.png" alt="TDD"></a>
-        <p></p>
+
+      <div class="row">
+        <div class="small-12 large-centered columns">
+                <h3 class="subject">HTML/CSS</h3>
+        </div>
+
+        <div class="small-12 medium-6 columns">
+          <a href="https://github.com/botrethewey/meowspace"><img src="images/meowspace.png" alt="meowspace"></a>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <a href="https://www.bthairdesign.com/"><img src="images/bthd.png" alt="bthd"></a>
+        </div>
       </div>
-      <div id="htmlcss">
-        <h3>HTML/CSS</h3>
-        <a href="https://github.com/botrethewey/meowspace"><img src="images/meowspace.png" alt="meowspace"></a>
-        <a href="https://www.bthairdesign.com/"><img src="images/bthd.png" alt="bthd"></a>
-      </div>
-      <div id="graphic">
-        <h3>Graphic Design</h3>
-        <a href="images/blueox.jpg" target="_self"><img src="images/blueox.jpg" alt="blueox"></a>
-        <a href="images/babe.gif" target="_self"><img src="images/babe.gif" alt="gif"></a>
-        <a href="images/shirts.jpg" target="_self"><img src="images/shirts.jpg" alt="family-shirt"></a>
-      </div>
-      <div class="src">
-        <p>Background Image Source: <a href="http://thedailytask.tumblr.com/post/91003707900/140706" target="_blank">The Daily Task</a></p>
+
+      <div class="row">
+        <div class="title small-12 large-centered columns">
+                <h3 class="subject">Graphic Design</h3>
+        </div>
+        <div class="small-12 medium-4 columns">
+          <a href="images/blueox.jpg" target="_self"><img src="images/blueox.jpg" alt="blueox"></a>
+        </div>
+        <div class="small-12 medium-4 columns">
+          <a href="images/babe.gif" target="_self"><img src="images/babe.gif" alt="gif"></a>
+        </div>
+        <div class="small-12 medium-4 columns">
+          <a href="images/shirts.jpg" target="_self"><img src="images/shirts.jpg" alt="family-shirt"></a>
+        </div>
       </div>
     </main>
-    <footer>
-      <div class="disc-copy">
+
+    <footer class="row">
+      <div class="disc-copy small-12 large-centered columns">
         <p> Unless otherwise stated, content is copyright &copy; 2017 Bo Trethewey </p>
       </div>
-      <div class="contact">
+      <div class="contact small-12 large-centered columns">
         <a href="https://github.com/botrethewey"><img src="images/Github.png" alt="Github-icon"></a>
         <a href="https://www.linkedin.com/in/botrethewey"><img src="images/Linkedin.png" alt="Linkedin-icon"></a>
         <a href="https://www.instagram.com/ketchupwithlobster/"><img src="images/Instagram.png" alt="Instagram-icon"></a>
       </div>
     </footer>
-  </body>
-  </html>
+    </body>
+    </html>

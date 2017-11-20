@@ -1,358 +1,79 @@
-/*Google font import*/
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Knewave|Permanent+Marker');
+@import foundation;
 
-/*regarding all*/
 * {
-  margin: 0px;
-  border: 0px;
-  font-family: 'helvetica';
+  font-family: 'Cutive Mono', monospace;
+  color: ivory;
 }
 
-/*header begin*/
-header {
-  margin-left: -1%;
-  padding-top: 3%;
-  padding-bottom: 4%;
-  height: 100px;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-}
-
-header h1 {
-  font-family: 'Permanent Marker';
-  font-size: 3.0em;
-  color: black;
-  text-transform: uppercase;
+.menu a:hover {
+  color: crimson;
+  border-top: 1px solid;
 }
 
 .banner {
   text-align: center;
+  margin-bottom: 2%;
+}
+
+.banner h1 {
+  font-family: 'Permanent Marker';
+  font-size: 5.0em;
+  text-transform: uppercase;
+  margin: 5% 0 0 0;
+  padding: 0;
+  min-width: 600px;
 }
 
 .banner p {
   display: inline;
-  color: black;
-  font-size: 0.7rem;
+  font-size: 150%;
 }
+
+.menu a {
+  font-size: 3rem;
+  color: ivory;
+}
+
+.intro p {
+   font-size: 1.5rem;
+   margin: 0 2% 0 7%;
+ }
 
 .banner p:nth-child(n+3)::before{
   content: "| ";
 }
 
-.nav {
-  text-align: center;
-}
-
-.nav ul {
-  margin: 1%;
-  padding: 0px;
-  background-color: transparent;
-}
-
-.nav li {
-  display: inline;
-  position: relative;
-  color: black;
-  font-size: 0.7rem;
-}
-
-.nav ul ul {
-  position: absolute;
-  left:0;
-  top: 100%;
-  display: none;
-}
-
-.nav li:hover ul {
-  display: block;
-  max-width: 90%;
-  background-color: white;
-  z-index: 999;
-}
-
-.nav a:hover {
-  color:silver;
-  background-color: black;
-}
-
-.nav a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.0rem;
-  font-family: 'Permanent Marker';
-  padding: 0px 5px;
-}
-/*end header*/
-
-/*main begin*/
-main {
-  margin-left: 9%;
-  margin-right: 10%;
-  height: 50%;
-  top: 0px;
-  background-color: black;
-}
-
-main a {
-  text-decoration: none;
-  color: white;
-}
-
-.src {
-  font-size: .5rem;
-  text-align: right;
-  margin: 3% 2% 2% 0%;
-  padding-top: 3%;
-}
-
-.src a {
-  color: black;
-  text-decoration: underline;
-}
-
-/*hobby blog begin*/
-#hoblog {
-  padding-top: 1%;
-  margin-bottom: 1%;
-  width: 80%;
-  background-color: transparent;
-  border-bottom: 1px solid black;
-}
-
-.blogtitle h2{
-  margin: 0% 9%;
-  background-color: black;
-  text-align: center;
-  letter-spacing: 2.0;
-  text-transform: lowercase;
-  font-size: 1em;
-  font-family: 'Permanent Marker';
-  padding-top: 3%;
-  height: 50px;
-}
-
-.blogtitle h2:hover {
-  background-image: url("../images/giphy.gif");
-  height: 50px;
-}
-
-.posts {
-  text-align: center;
-  background-color: silver;
-  overflow: hidden;
-}
-.posts a {
-  color: black;
-  text-decoration: underline;
-}
-
-.posts section {
-  margin: 2% 10%;
-  color: black;
-  font-size: 0.8em;
-  line-height: 1.5;
-}
-
-.posts img {
-  margin: 1% 12%;
-  width: 70%;
-  padding: 1%;
-}
-
-.posts img:hover {
-  opacity: 0.4;
-  border: 1px dashed black;
-}
-
-.posts h2 {
-  margin: 0% 10%;
-
-  letter-spacing: 2.0;
-  font-size: 3em;
-  font-family: 'Permanent Marker';
-}
-
-.posts p {
-  margin: 0% 10%;
-}
-
-.responsive-iframe iframe {
-  width: 100%;
-  height: 500px;
-}
-
-
-/*end hobby blog*/
-
-/*home begin*/
-#home {
-  background-image: url("../images/furry.gif");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: .8;
-  margin: 1% 10%;
-}
-
-#welcome {
-  height: 300px;
-}
-
-#welcome p {
-  text-align: center;
-  font-size: 0.9rem;
-  padding-top: 140px;
-  color: black;
-  animation: fade 3s infinite;
-}
-
-@keyframes fade {
-  0% { opacity: 0 }
-  50% { opacity: 1 }
-  100%  {opacity: 0 }
-}
-/*end home*/
-
-/*portfolio begin*/
-#swim {
-  background-image: url("../images/Giphy1.gif");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#portfolio {
-  text-align: center;
-  background: none;
-  border-bottom: 1px solid black;
-  margin-top: -3%;
-}
-
-#portfolio article {
-  display: inline-block;;
-  height: 180px;
-  width: 180px;
-  margin: 1%;
-  border-radius: 50%;
-  background-color: black;
-}
-
-.subjects {
-  text-align: center;
-  padding: 3% 0%;
-}
-
-#portfolio article:active {
-  border: 1px dashed white;
-  background-color: lightsalmon;
-}
-
-#portfolio h2 {
-  font-family: 'Permanent Marker';
-  font-size: 1.3em;
-  text-align: center;
-  padding-top: 35%;
-  letter-spacing: 2.0;
-}
-
-#portfolio h3 {
-  font-family: 'Permanent Marker';
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  color: white;
-  font-size: 1.3em;
-  text-align: center;
-  letter-spacing: 2.0;
-}
-
-#portfolio img {
-  margin-top: 3%;
-  height: 300px;
-  width: auto;
-}
-
-#portfolio img:active {
-  border: 1px dashed white;
-}
-
-#ruby,
-#htmlcss,
-#graphic {
-  background-color: black;
-  margin: 0% 10%;
-  padding-bottom: 5%;
-}
-/*end portfolio*/
-
-/*about begin*/
-#space {
-  background-image: url("../images/space.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#about {
-  background:none;
-  border-bottom: 1px solid black;
-}
-
-#about section:first-of-type {
-  padding: 2% 9% 0% 9%;
-}
-
 #face {
-  width: 300px;
-  height: auto;
-  float: right;
-  clear: both;
-  margin-right: 0%;
+  width: 600px;
   border-radius: 50%;
+  margin: 10% 2%;
   text-align: center;
-  max-width: 400px;
-  position: relative;
-  left: 5%;
 }
 
-#intro h2 {
-  text-align: right;
-  line-height: .9;
-  color: black;
-  font-size: 4em;
+.intro h2 {
   font-family: 'Permanent Marker';
-  margin-top: 12%;
-  padding-bottom: 2%;
+  font-size: 7.0rem;
+
+  text-transform: uppercase;
+  margin: 10% 0 0 7%;
+  padding: 0;
+  min-width: 600px;
+  text-align: justify;
 }
 
-#intro p {
-  text-align: right;
-  font-size: .8rem;
-  margin-right: 5%;
-  line-height:  1.5;
+body {
+  background-color: black;
+  min-width: 600px;
 }
 
-#space div.src {
-  padding-top: 10%;
-}
-/*end about*/
-/*end main*/
-
-/*footer begin*/
-footer {
-  margin: 2% 10% 0% 9%;
-}
-
-.disc-copy {
-  max-width: 550px;
-  font-size: 0.5em;
-  float: left;
-  clear: both;
-  margin: 0px 0px 5% 9%;
-  text-align: left;
+.contact img:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  border: 1px dashed ivory;
+  border-radius: 50%;
 }
 
 .contact {
@@ -362,12 +83,87 @@ footer {
 }
 
 .contact img {
-  width: 30px;
+  width: 90px;
   height: auto;
 }
 
-.contact img:hover {
-  border: 1px dashed black;
-  border-radius: 50%;
+footer {
+  text-align: center;
+  margin-bottom: 200px;
 }
-/*end footer*/
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.disc-copy {
+  border-top: 1px ivory solid;
+  margin: 7% 2% 0 2%;
+  font-size: 20px;
+  text-align: justify;
+}
+
+#portfolio {
+  margin: 5% 2%;
+}
+
+#portfolio img {
+  width: 600px;
+  height: auto;
+  vertical-align: bottom;
+}
+
+#portfolio .title {
+  margin: 2% 0;
+}
+
+.subject {
+  padding-left: 1%;
+  background-color: white;
+  font-family: 'Permanent Marker';
+  color: black;
+  font-size: 50px;
+}
+
+.posts {
+  margin-top: 5%;
+}
+
+.blogtitle h2{
+  margin: 2% 9%;
+  background-color: black;
+  text-align: center;
+  letter-spacing: 2.0;
+  text-transform: lowercase;
+  font-size: 3em;
+  font-family: 'Permanent Marker';
+}
+
+.blogtitle h2:hover {
+  background-image: url("../images/giphy.gif");
+
+}
+
+#hoblog {
+  margin: 5% 0 0 0;
+}
+
+iframe {
+  width: 100%;
+  height: 800px;
+  text-align: center;
+}
