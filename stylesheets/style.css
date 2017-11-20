@@ -45,7 +45,7 @@
 }
 
 #face {
-  width: 600px;
+  min-width: 300px;
   border-radius: 50%;
   margin: 10% 2%;
   text-align: center;
